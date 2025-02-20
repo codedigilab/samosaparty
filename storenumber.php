@@ -2,8 +2,14 @@
 <html lang="en">
 
 <head>
-    <?php include 'include/head.php';?>
-    <?php include 'include/internetdata.php';?>
+<?php
+
+include 'include/head.php';
+require __DIR__ . '/database/storenumber.php';
+$users = getUsers();
+$i = 0;
+
+?>
 </head>
 
 <body>
@@ -48,29 +54,36 @@
                                     <table class="table  datanew ">
                                         <thead>
                                             <tr>
-                                                <th>No.</th>
+                                                
                                                 <th>Store Name</th>
                                                 <th>Incharge Name</th>
                                                 <th>Incharge Number</th>
                                                 <th>AM Name</th>
-                                                <th>Customer Number</th>
-                                                <th>Action</th>
+                                                <th>AM Number</th>
+                                                <th>Traner Adil</th>
+                                                <th>IT Khalid</th>
+                                                <th>Supply Chain Prabhat</th>
+                                                
                                                 
 
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            
+                                        <?php if (is_array($users) || is_object($users)) foreach ($users as $i) : ?>
 											<tr>
-                                                <td><?php echo ++$i;?></td>
-                                                <td>Sarita Vihar</td>
-                                                <td>6366560276</td>
-                                                <td>01117917622_wifi</td>
-                                                <td><?php echo "06/$datemonth/2025" ?></td>
-                                                <td><?php echo $saritavihar  ?></td>
+                                                <td><?php echo $i['storename'] ?></td>
+                                                <td><?php echo $i['StoreInchargeName'] ?></td>
+                                                <td><?php echo $i['StoreInchargeNumber'] ?></td>
+                                                <td><?php echo $i['AMName'] ?></td>
+                                                <td><?php echo $i['AMNamenumber'] ?></td>
+                                                <td><?php echo $i['Tranernumber'] ?></td>
+                                                <td><?php echo $i['ITPersonnumber'] ?></td>
+                                                <td><?php echo $i['SupplyChainnumber'] ?></td>
                                                 
-                                                <td><span class="badge bg-success">Completed</span></td>
+                                               
                                             </tr>
+                                            <?php endforeach ?>
+
                                         </tbody>
                                     </table>
                                 </div>

@@ -60,6 +60,7 @@
                                                 <th>Location</th>
                                                 <th>Wifi Name</th>
                                                 <th>Password</th>
+                                                <th>Actions</th>
 
 
                                             </tr>
@@ -72,6 +73,7 @@
                                                 <td><?php echo $i['location'] ?></td>
                                                 <td><?php echo $i['wifiname'] ?></td>
                                                 <td><?php echo $i['password'] ?></td>
+                                                <td><a href="update.php?id=<?php echo $i['id'] ?>" class="btn btn-info btn-sm btn-block">Update</a></td>
 
                                             </tr>
                                             <?php endforeach ?>
