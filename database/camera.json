@@ -7,10 +7,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Umar",
+                "CameraType": "HIK",
+                "Installedby": "Umar",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "1"
             },
             {
                 "OutletName": "Defence colony",
@@ -18,10 +19,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Umar",
+                "CameraType": "HIK",
+                "Installedby": "Umar",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "2"
             },
             {
                 "OutletName": "Raj Nagar",
@@ -29,10 +31,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Umar",
+                "CameraType": "HIK",
+                "Installedby": "Umar",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "3"
             },
             {
                 "OutletName": "Sec 141 Noida",
@@ -40,10 +43,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Umar",
+                "CameraType": "HIK",
+                "Installedby": "Umar",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "4"
             },
             {
                 "OutletName": "ROHINI",
@@ -51,10 +55,11 @@
                 "Camera": 9891704383,
                 "Password": "OTP",
                 "Installation": "Done",
-                "Camera Type": "Wifi (EzyLiv)",
-                "Installed by": "Dinesh",
+                "CameraType": "Wifi (EzyLiv)",
+                "Installedby": "Dinesh",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "5"
             },
             {
                 "OutletName": "Sec 16 Faridabad",
@@ -62,10 +67,11 @@
                 "Camera": 9891704383,
                 "Password": "OTP",
                 "Installation": "Done",
-                "Camera Type": "Wifi (EzyLiv)",
-                "Installed by": "Dinesh",
+                "CameraType": "Wifi (EzyLiv)",
+                "Installedby": "Dinesh",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "6"
             },
             {
                 "OutletName": "Malviya Nagar",
@@ -73,10 +79,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "7"
             },
             {
                 "OutletName": "East patel nagar",
@@ -84,10 +91,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "8"
             },
             {
                 "OutletName": "Dwarka",
@@ -95,10 +103,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "9"
             },
             {
                 "OutletName": "Ashok Vihar",
@@ -106,10 +115,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "10"
             },
             {
                 "OutletName": "Vasant kunj",
@@ -117,10 +127,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "11"
             },
             {
                 "OutletName": "Laxmi Nagar",
@@ -128,10 +139,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "12"
             },
             {
                 "OutletName": "Janakpuri",
@@ -139,10 +151,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "13"
             },
             {
                 "OutletName": "Sushantlok",
@@ -150,10 +163,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "14"
             },
             {
                 "OutletName": "Sohana Road",
@@ -161,10 +175,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "15"
             },
             {
                 "OutletName": "Sector 56",
@@ -172,10 +187,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "16"
             },
             {
                 "OutletName": "Sector 90",
@@ -183,10 +199,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "17"
             },
             {
                 "OutletName": "Noida sec 73",
@@ -194,10 +211,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Umar",
+                "CameraType": "HIK",
+                "Installedby": "Umar",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "18"
             },
             {
                 "OutletName": "Noida sector 4",
@@ -205,10 +223,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Umar",
+                "CameraType": "HIK",
+                "Installedby": "Umar",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "19"
             },
             {
                 "OutletName": "Crossing Republic",
@@ -216,10 +235,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "20"
             },
             {
                 "OutletName": "Indrapuram",
@@ -227,10 +247,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "21"
             },
             {
                 "OutletName": "Alpha sec 2 Noida",
@@ -238,10 +259,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "22"
             },
             {
                 "OutletName": "Udyog Vihar",
@@ -249,10 +271,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Mrigendra",
+                "CameraType": "HIK",
+                "Installedby": "Mrigendra",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "23"
             },
             {
                 "OutletName": "Diishad Garden",
@@ -260,10 +283,11 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Goutham",
+                "CameraType": "HIK",
+                "Installedby": "Goutham",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "24"
             },
             {
                 "OutletName": "Gurgeon Central Kitchen",
@@ -271,26 +295,35 @@
                 "Camera": "IT@Samosaparty.co.in",
                 "Password": "Samosa@1997",
                 "Installation": "Done",
-                "Camera Type": "HIK",
-                "Installed by": "Mrigendra",
+                "CameraType": "HIK",
+                "Installedby": "Mrigendra",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "25"
             },
             {
                 "OutletName": "Gandhi Vihar",
                 "Location": "Delhi NCR",
                 "Camera": "admin",
                 "Password": "pspc@2212 (Verification code Abcd1234, small)",
-                "Date": "Nil",
-                "Remark": "Nil"
+                "Date": "21\/02\/2025",
+                "Remark": "",
+                "id": "26",
+                "Installation": "Done",
+                "CameraType": "Hik",
+                "Installedby": "Khalid"
             },
             {
                 "OutletName": "Gour City Noida Ex",
                 "Location": "Delhi NCR",
                 "Camera": "admin",
                 "Password": "pspc@2212 (Verification code abcd1234)",
-                "Date": "Nil",
-                "Remark": "Nil"
+                "Date": "21\/02\/2025",
+                "Remark": "",
+                "id": "27",
+                "Installation": "Done",
+                "CameraType": "Hik",
+                "Installedby": "Khalid"
             },
             {
                 "OutletName": "uttam nagar",
@@ -298,7 +331,8 @@
                 "Camera": "admin",
                 "Password": "pspc@2212, Verification code abcd1234",
                 "Date": "Nil",
-                "Remark": "Nil"
+                "Remark": "Nil",
+                "id": "28"
             }
         ]
     }

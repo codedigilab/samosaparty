@@ -2,88 +2,83 @@
 <html lang="en">
 
 <head>
-    <?php
-    include 'include/head.php';
-    require __DIR__ . '/database/wifipassword.php';
+	
+<?php  
+include 'include/head.php';
+require __DIR__ . '/database/wifipassword.php';
 
-    $user =
-        [
-            'id' => '',
-            'picture' => '',
-            'outletname' => '',
-            'location' => '',
-            'wifiname' => '',
-            'password' => '',
-        ];
+if (!isset($_GET['id'])) {
+    include "database/not_found.php";
+    exit;
+}
 
+$userId = $_GET['id'];
 
+$user = getUserById($userId);
+if (!$user) {
+    include "database/not_found.php";
+    exit;
+}
 
-    $errors = [
+$errors = [
         'outletname' => '',
         'location' => '',
         'wifiname' => '',
         'password' => '',
-    ];
+];
 
-    $isValid = true;
+$isValid = true;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $user = array_merge($user, $_POST);
+    $isValid = validateUser($user, $errors);
+    uploadImage($_FILES['picture'], $user);
 
-        $user = array_merge($user, $_POST);
-        $isValid = validateUser($user, $errors);
-
-        if ($isValid) {
-            $user = createUser($_POST);
-            uploadImage($_FILES['picture'], $user);
-            header("Location: wifipass.php");
-        }
+    if ($isValid) {
+        $user = updateUser($_POST, $userId);
+        header("Location: wifipass.php");
     }
-    ?>
+}
 
+?>
 </head>
 
 <body>
 
-    <div id="global-loader">
-        <div class="whirly-loader"> </div>
-    </div>
+	<div id="global-loader">
+		<div class="whirly-loader"> </div>
+	</div>
 
-    <!-- Main Wrapper -->
-    <div class="main-wrapper">
+	<!-- Main Wrapper -->
+	<div class="main-wrapper">
+		<?php include 'include/header.php';?>
+		<?php include 'include/sidebar.php';?>
 
-        <?php include 'include/header.php'; ?>
-        <?php include 'include/sidebar.php'; ?>
-
-        <div class="page-wrapper">
-            <div class="content">
-                <div class="page-header">
-                    <div class="add-item d-flex" style="visibility: hidden;">
-                        <div class="page-title">
-                            <h4>New Employee</h4>
-                            <h6>Create new Employee</h6>
-                        </div>
-                    </div>
-                    <ul class="table-top-head">
-                        <li>
-                            <div class="page-btn">
-                                <a href="wifipass.php" class="btn btn-secondary"><i data-feather="arrow-left"
-                                        class="me-2"></i>Back to Password List</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i
-                                    data-feather="chevron-up" class="feather-chevron-up"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <h3>
-                    <?php if ($user['id']) : ?>
-                        Update User : <b><?php echo $user['outletname'] ?></b>
-                    <?php else : ?>
-                        Create new user
-                    <?php endif ?>
-                </h3>
-                <!-- /product list -->
+		<div class="page-wrapper">
+			<div class="content">
+				<div class="page-header">
+					<div class="add-item d-flex">
+						<div class="page-title">
+							<h4>Edit Product</h4>
+						</div>
+					</div>
+					<ul class="table-top-head">
+						<li>
+							<div class="page-btn">
+								<a href="product-list.html" class="btn btn-secondary"><i data-feather="arrow-left" class="me-2"></i>Back to Product</a>
+							</div>
+						</li>
+						<li>
+							<a data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" class="feather-chevron-up"></i></a>
+						</li>
+					</ul>
+					
+				</div>
+				<?php if ($user['id']) : ?>
+                Update User : <b><?php echo $user['outletname'] ?></b>
+                <?php else : ?>
+                Create new user
+                <?php endif ?>
                 <form method="POST" enctype="multipart/form-data" action="">
                     <div class="card">
                         <div class="card-body">
@@ -144,59 +139,51 @@
                         </div>
                     </div>
            
-
-
             </form>
-        </div>
-    </div>
-    </div>
-    <!-- /Main Wrapper -->
+
+		</div>
+	</div>
+	</div>
+	<!-- /Main Wrapper -->
 
 
-    <div class="customizer-links" id="setdata">
-        <ul class="sticky-sidebar">
-            <li class="sidebar-icons">
-                <a href="#" class="navigation-add" data-bs-toggle="tooltip" data-bs-placement="left"
-                    data-bs-original-title="Theme">
-                    <i data-feather="settings" class="feather-five"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
+	<!-- /Add Variatent -->
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
+	<!-- jQuery -->
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
 
-    <!-- Feather Icon JS -->
-    <script src="assets/js/feather.min.js"></script>
+	<!-- Feather Icon JS -->
+	<script src="assets/js/feather.min.js"></script>
 
-    <!-- Slimscroll JS -->
-    <script src="assets/js/jquery.slimscroll.min.js"></script>
+	<!-- Slimscroll JS -->
+	<script src="assets/js/jquery.slimscroll.min.js"></script>
 
-    <!-- Datatable JS -->
-    <script src="assets/js/jquery.dataTables.min.js"></script>
-    <script src="assets/js/dataTables.bootstrap5.min.js"></script>
+	<!-- Datatable JS -->
+	<script src="assets/js/jquery.dataTables.min.js"></script>
+	<script src="assets/js/dataTables.bootstrap5.min.js"></script>
 
-    <!-- Bootstrap Core JS -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!-- Bootstrap Core JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Datetimepicker JS -->
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+	<!-- Select2 JS -->
+	<script src="assets/plugins/select2/js/select2.min.js"></script>
 
+	<!-- Datetimepicker JS -->
+	<script src="assets/js/moment.min.js"></script>
+	<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
 
-    <!-- Select2 JS -->
-    <script src="assets/plugins/select2/js/select2.min.js"></script>
+	<!-- Bootstrap Tagsinput JS -->
+	<script src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
 
-    <!-- Sweetalert 2 -->
-    <script src="assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
-    <script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
+	<!-- Sweetalert 2 -->
+	<script src="assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
+	<script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
 
-    <!-- Custom JS -->
+	<!-- Custom JS -->
+    
+	<script src="assets/js/theme-script.js"></script>
+	<script src="assets/js/script.js"></script>
 
-
-    <script src="assets/js/theme-script.js"></script>
-    <script src="assets/js/script.js"></script>
 
 </body>
 

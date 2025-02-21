@@ -100,20 +100,7 @@ function validateUser($user, &$errors)
         $isValid = false;
         $errors['outletname'] = 'Name is mandatory';
     }
-    if (!$user['location'] ) {
-        $isValid = false;
-        $errors['location'] = 'location is required and it must be more than 6 and less then 16 character';
-    }
-
-    if (!$user['wifiname']) {
-        $isValid = false;
-        $errors['wifiname'] = 'This must be a valid wifiname address';
-    }
-
-    if (!$user['password']) {
-        $isValid = false;
-        $errors['password'] = 'This must be a valid password number';
-    }
+   
 
     return $isValid;
 }
