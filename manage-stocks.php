@@ -111,7 +111,7 @@
 
 													<form class="confirm-text p-2" method="POST" action="manage-stocks.php">
 														<input type="hidden" name="id" value="<?php echo $i['id'] ?>">
-														<button class="btn btn-danger btn-sm btn-block">
+														<button class="btn btn-sm btn-block">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24"
 																height="24" viewBox="0 0 24 24" fill="none"
 																stroke="currentColor" stroke-width="2"
