@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<?php include 'include/head.php';?>
+	<?php include 'include/head.php'; ?>
 </head>
 
 <body>
@@ -12,11 +12,11 @@
 	<!-- Main Wrapper -->
 	<div class="main-wrapper">
 
-	<?php include 'include/header.php';?>
+		<?php include 'include/header.php'; ?>
 
-	<?php include 'include/sidebar.php';?>
+		<?php include 'include/sidebar.php'; ?>
 
-		
+
 
 
 		<div class="page-wrapper">
@@ -350,7 +350,7 @@
 			</div>
 		</div>
 
-	
+
 
 	</div>
 	<!-- /Main Wrapper -->
@@ -376,10 +376,10 @@
 	<script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
 
 	<!-- Custom JS -->
-	<script src="assets/js/theme-script.js"></script>	
-		<script src="assets/js/script.js"></script>
+	<script src="assets/js/theme-script.js"></script>
+	<script src="assets/js/script.js"></script>
 
-	
+
 </body>
 
 </html>
