@@ -87,7 +87,7 @@
                                                 <tr>
                                                     <td><?php echo $i['storename'] ?></td>
                                                     <td><?php echo $i['StoreInchargeName'] ?></td>
-                                                    <td><?php echo $i['StoreInchargeNumber'] ?></td>
+                                                    <td><a href="tel:+91<?php echo $i['StoreInchargeNumber'] ?>"><?php echo $i['StoreInchargeNumber'] ?></a></td>
                                                     <td><?php echo $i['AMName'] ?></td>
                                                     <td><?php echo $i['AMNamenumber'] ?></td>
                                                     <td><?php echo $i['Tranernumber'] ?></td>
