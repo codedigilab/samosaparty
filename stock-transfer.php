@@ -83,7 +83,8 @@
 								</thead>
 								<tbody>
 									<?php if (is_array($users) || is_object($users)) foreach ($users as $i) : ?>
-										<?php if ($i['Status']=="Available") { ?>
+									<?php if ($i['Status']=="Not Available") { ?>
+										
 										<tr>
 											<td><?php echo $i['Date'] ?></td>
 											<td><?php echo $i['ProductName'] ?></td>
@@ -131,7 +132,7 @@
 
 											</td>
 										</tr>
-										<?php } ?>
+									<?php } ?>
 									<?php endforeach ?>
 								</tbody>
 							</table>

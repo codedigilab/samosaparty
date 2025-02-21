@@ -43,7 +43,7 @@
                         </li>
                         <li><a href="stock-adjustment.html"><i data-feather="clipboard"></i><span>Stock
                                     Adjustment</span></a></li>
-                        <li><a href="stock-transfer.html"><i data-feather="truck"></i><span>Stock Transfer</span></a>
+                        <li><a href="stock-transfer.php"><i data-feather="truck"></i><span>Stock Transfer</span></a>
                         </li>
                     </ul>
                 </li>
